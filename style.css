@@ -66,7 +66,7 @@ img {
 
 .cover {
   position: relative;
-  min-height: 690px;
+  min-height: 620px;
   padding: 58px 0 28px;
   text-align: center;
 }
@@ -113,6 +113,10 @@ img {
   font-weight: 500;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+}
+
+.names-compact p {
+  margin-bottom: 0;
 }
 
 .names span {
@@ -186,7 +190,8 @@ img {
   overflow: hidden;
 }
 
-.letter.botanical-card {
+.intro.botanical-card,
+.congratulations.botanical-card {
   padding-top: 54px;
 }
 
@@ -224,66 +229,29 @@ img {
   transform: rotate(180deg);
 }
 
-.letter .script-name {
-  margin: 0 0 18px;
-  color: #17150f;
-  font-family: var(--script);
-  font-size: 35px;
-  line-height: 1.2;
-  white-space: nowrap;
-}
-
-.letter p {
+.intro p,
+.congratulations p,
+.plain-section p,
+.pasture-section p {
   margin: 0 auto 14px;
   color: #373126;
   font-size: 15px;
   line-height: 1.62;
 }
 
-.letter time {
-  display: block;
-  margin: 22px 0 16px;
-  color: #534d42;
-  font-size: 13px;
-  letter-spacing: 0.08em;
+.intro h2,
+.congratulations h2,
+.plain-section h2,
+.pasture-section h2 {
+  margin: 0 0 18px;
+  color: var(--ink);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.15;
 }
 
-.couple-photo {
-  width: 218px;
-  height: 145px;
-  margin: 0 auto 16px;
-  object-fit: cover;
-}
-
-.green-line {
-  max-width: 230px;
-  color: var(--green) !important;
-  font-size: 17px !important;
-}
-
-.person {
-  margin: 24px 0 28px;
-}
-
-.person img {
-  width: 166px;
-  height: 166px;
-  margin: 0 auto 13px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.person h2 {
-  margin: 0;
-  color: var(--green);
-  font-family: var(--serif);
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.info-text h3,
-.form-placeholder h3 {
-  margin: 25px 0 9px;
+.congratulations h3 {
+  margin: 26px 0 10px;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -325,57 +293,125 @@ img {
   font-size: 11px !important;
 }
 
-.polls {
+.plain-section,
+.pasture-section {
+  padding: 46px 38px;
+  text-align: center;
+}
+
+.plain-section {
+  background: var(--paper);
+}
+
+.pasture-section {
+  color: #213817;
+  background: #dfeeca;
+}
+
+.pasture-section h2,
+.pasture-section p {
+  color: #213817;
+}
+
+.confirmation {
   padding-top: 42px;
-  padding-bottom: 64px;
+  padding-bottom: 44px;
 }
 
-.dress-code.botanical-card {
-  padding-top: 32px;
-  padding-bottom: 34px;
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  margin-top: 12px;
+  padding: 0 24px;
+  border-radius: 4px;
+  color: #12300e;
+  background: var(--green-soft);
+  box-shadow: 0 6px 16px rgba(72, 102, 46, 0.18);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-decoration: none;
 }
 
-.polls h2,
-.dress-code h2 {
-  margin: 0 0 16px;
-  font-size: 26px;
-  font-weight: 600;
+.polls {
+  padding-top: 44px;
+  padding-bottom: 48px;
+}
+
+.polls .form-placeholder__box {
+  margin-top: 22px;
+  border-color: rgba(61, 96, 41, 0.28);
+  background: rgba(255, 255, 255, 0.48);
+  color: rgba(33, 56, 23, 0.7);
+}
+
+.form-embed {
+  width: 100%;
+  margin-top: 22px;
+  padding: 10px;
+  border: 1px solid rgba(61, 96, 41, 0.18);
+  border-radius: 14px;
+  background: rgba(255, 253, 248, 0.72);
+  box-shadow: 0 10px 24px rgba(72, 102, 46, 0.12);
+  overflow: hidden;
+}
+
+.form-embed iframe {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 620px !important;
+  border-radius: 10px;
+  border: 0;
+}
+
+.dress-code {
+  padding-top: 46px;
+  padding-bottom: 48px;
+}
+
+.dress-code p + p {
+  margin-top: 4px;
 }
 
 .dress-palette {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
-  margin-top: 18px;
+  margin: 22px auto 0;
 }
 
 .dress-palette span {
-  width: 34px;
-  height: 34px;
-  border: 5px solid rgba(255, 255, 255, 0.78);
+  width: 28px;
+  height: 28px;
+  border: 0;
   border-radius: 50%;
   background: var(--color);
-  box-shadow: 0 4px 12px rgba(43, 38, 25, 0.12);
+  box-shadow: 0 3px 10px rgba(43, 38, 25, 0.12);
 }
 
-.poll-card {
-  margin-top: 20px;
-  padding: 18px 16px;
-  border: 1px solid rgba(109, 143, 67, 0.2);
-  background: rgba(255, 255, 255, 0.72);
+.dress-palette-circles {
+  max-width: 278px;
 }
 
-.poll-card h3 {
-  margin: 0 0 8px;
-  color: var(--green);
-  font-size: 15px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+.dress-palette-bars {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3px;
+  width: min(100%, 250px);
+  height: 54px;
+  margin: 24px auto 0;
+}
+
+.dress-palette-bars span {
+  background: var(--color);
 }
 
 .schedule {
-  padding: 48px 34px 26px;
+  padding: 48px 34px 38px;
   background: var(--paper);
 }
 
@@ -469,7 +505,8 @@ img {
   text-decoration: none;
 }
 
-.map-button:focus-visible {
+.map-button:focus-visible,
+.primary-button:focus-visible {
   outline: 2px solid var(--green);
   outline-offset: 3px;
 }
@@ -485,9 +522,10 @@ img {
     padding-right: 34px;
   }
 
-  .dress-code.botanical-card {
-    padding-top: 30px;
-    padding-bottom: 32px;
+  .plain-section,
+  .pasture-section {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .schedule {
