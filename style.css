@@ -121,10 +121,10 @@ img {
   max-width: 315px;
   margin: 0 auto;
   font-family: var(--serif);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 1.8;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -145,8 +145,8 @@ img {
 .date-block span {
   display: block;
   color: var(--muted);
-  font-size: 13px;
-  letter-spacing: 0.1em;
+  font-size: 14px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -156,9 +156,9 @@ img {
 
 .countdown {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0;
-  padding: 0 28px;
+  padding: 0 42px;
   font-family: var(--serif);
 }
 
@@ -166,14 +166,14 @@ img {
   display: grid;
   gap: 2px;
   color: #111;
-  font-size: 8px;
+  font-size: 9px;
   font-weight: 400;
   line-height: 1.1;
   text-transform: lowercase;
 }
 
 .countdown b {
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 600;
   letter-spacing: 0.03em;
 }
@@ -184,6 +184,10 @@ img {
   text-align: center;
   background: #fffdf8;
   overflow: hidden;
+}
+
+.letter.botanical-card {
+  padding-top: 54px;
 }
 
 .botanical-card::before {
@@ -221,25 +225,26 @@ img {
 }
 
 .letter .script-name {
-  margin: 0 0 24px;
+  margin: 0 0 18px;
   color: #17150f;
   font-family: var(--script);
-  font-size: 32px;
-  line-height: 1.35;
+  font-size: 35px;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .letter p {
-  margin: 0 auto 12px;
+  margin: 0 auto 14px;
   color: #373126;
-  font-size: 13px;
-  line-height: 1.55;
+  font-size: 15px;
+  line-height: 1.62;
 }
 
 .letter time {
   display: block;
   margin: 22px 0 16px;
   color: #534d42;
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.08em;
 }
 
@@ -253,7 +258,7 @@ img {
 .green-line {
   max-width: 230px;
   color: var(--green) !important;
-  font-size: 15px !important;
+  font-size: 17px !important;
 }
 
 .person {
@@ -272,14 +277,14 @@ img {
   margin: 0;
   color: var(--green);
   font-family: var(--serif);
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
 }
 
 .info-text h3,
 .form-placeholder h3 {
   margin: 25px 0 9px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -308,7 +313,7 @@ img {
   color: rgba(18, 48, 14, 0.58);
   background: rgba(255, 255, 255, 0.82);
   font-family: var(--sans);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -321,19 +326,19 @@ img {
 }
 
 .polls {
-  padding-top: 78px;
+  padding-top: 42px;
   padding-bottom: 64px;
 }
 
-.dress-code {
-  padding-top: 78px;
-  padding-bottom: 62px;
+.dress-code.botanical-card {
+  padding-top: 32px;
+  padding-bottom: 34px;
 }
 
 .polls h2,
 .dress-code h2 {
   margin: 0 0 16px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600;
 }
 
@@ -342,7 +347,7 @@ img {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .dress-palette span {
@@ -364,7 +369,7 @@ img {
 .poll-card h3 {
   margin: 0 0 8px;
   color: var(--green);
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -397,12 +402,12 @@ img {
 }
 
 .schedule time {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .schedule h3 {
   margin: 0 0 2px;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 500;
   line-height: 1.05;
 }
@@ -410,8 +415,8 @@ img {
 .schedule p {
   margin: 0 0 13px;
   color: #3c3529;
-  font-size: 12px;
-  line-height: 1.55;
+  font-size: 14px;
+  line-height: 1.58;
 }
 
 .map-section {
@@ -435,7 +440,7 @@ img {
 .map-address p {
   margin: 0;
   color: #3c3529;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -478,6 +483,11 @@ img {
   .botanical-card {
     padding-left: 34px;
     padding-right: 34px;
+  }
+
+  .dress-code.botanical-card {
+    padding-top: 30px;
+    padding-bottom: 32px;
   }
 
   .schedule {
