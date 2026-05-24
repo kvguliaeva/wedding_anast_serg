@@ -17,7 +17,7 @@ function updateCountdown() {
   const minutes = Math.floor((diff % hourMs) / minuteMs);
   const seconds = Math.floor((diff % minuteMs) / 1000);
 
-  daysNode.textContent = String(days).padStart(3, "0");
+  daysNode.textContent = String(days);
   hoursNode.textContent = String(hours).padStart(2, "0");
   minutesNode.textContent = String(minutes).padStart(2, "0");
   secondsNode.textContent = String(seconds).padStart(2, "0");
