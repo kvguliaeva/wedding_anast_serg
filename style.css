@@ -1,0 +1,487 @@
+:root {
+  --paper: #fffdf8;
+  --ink: #17150f;
+  --muted: #6e6a5c;
+  --green: #6d8f43;
+  --green-soft: #ccefa5;
+  --line: rgba(43, 38, 25, 0.18);
+  --serif: "Cormorant Infant", Georgia, serif;
+  --sans: "Inter", Arial, sans-serif;
+  --script: "Marck Script", cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #ecebe5;
+  font-family: var(--serif);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.site {
+  position: relative;
+  width: min(100%, 390px);
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--paper);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.12);
+}
+
+.site::before,
+.site::after {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  width: 1px;
+  content: "";
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.site::before {
+  left: calc(50% - 195px);
+}
+
+.site::after {
+  right: calc(50% - 195px);
+}
+
+.cover {
+  position: relative;
+  min-height: 690px;
+  padding: 58px 0 28px;
+  text-align: center;
+}
+
+.flower-hero {
+  width: 178px;
+  height: 250px;
+  margin: 0 auto 28px;
+  opacity: 0.9;
+}
+
+.flower-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.names {
+  position: relative;
+  padding: 24px 24px 20px;
+}
+
+.names::before,
+.names::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  content: "";
+  background: var(--line);
+}
+
+.names::before {
+  top: 0;
+}
+
+.names::after {
+  bottom: 0;
+}
+
+.names p {
+  margin: 0 0 13px;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.names span {
+  display: block;
+  color: var(--muted);
+  max-width: 315px;
+  margin: 0 auto;
+  font-family: var(--serif);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.date-block {
+  padding: 24px 24px 14px;
+}
+
+.date-block p,
+.invite-label {
+  margin: 0 0 13px;
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.date-block span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.invite-label {
+  margin-bottom: 9px;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  padding: 0 28px;
+  font-family: var(--serif);
+}
+
+.countdown span {
+  display: grid;
+  gap: 2px;
+  color: #111;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: lowercase;
+}
+
+.countdown b {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.botanical-card {
+  position: relative;
+  padding: 82px 42px 58px;
+  text-align: center;
+  background: #fffdf8;
+  overflow: hidden;
+}
+
+.botanical-card::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: url("assets/original-decor/pattern-upl7337.png") top center / 390px auto repeat-y;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.botanical-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.top-florals,
+.bottom-florals {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 92px;
+  background: url("assets/original-decor/pattern-upl7338.png") center top / 390px auto no-repeat;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.top-florals {
+  top: 0;
+}
+
+.bottom-florals {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+.letter .script-name {
+  margin: 0 0 24px;
+  color: #17150f;
+  font-family: var(--script);
+  font-size: 32px;
+  line-height: 1.35;
+}
+
+.letter p {
+  margin: 0 auto 12px;
+  color: #373126;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.letter time {
+  display: block;
+  margin: 22px 0 16px;
+  color: #534d42;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.couple-photo {
+  width: 218px;
+  height: 145px;
+  margin: 0 auto 16px;
+  object-fit: cover;
+}
+
+.green-line {
+  max-width: 230px;
+  color: var(--green) !important;
+  font-size: 15px !important;
+}
+
+.person {
+  margin: 24px 0 28px;
+}
+
+.person img {
+  width: 166px;
+  height: 166px;
+  margin: 0 auto 13px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person h2 {
+  margin: 0;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.info-text h3,
+.form-placeholder h3 {
+  margin: 25px 0 9px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.form-placeholder {
+  margin-top: 20px;
+}
+
+.form-placeholder h3 {
+  color: var(--green);
+  font-family: var(--script);
+  font-size: 22px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.form-placeholder__box {
+  display: grid;
+  width: 100%;
+  min-height: 82px;
+  margin-top: 16px;
+  border: 1px solid rgba(102, 129, 63, 0.28);
+  border-radius: 4px;
+  place-items: center;
+  color: rgba(18, 48, 14, 0.58);
+  background: rgba(255, 255, 255, 0.82);
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.calendar-note {
+  margin-top: 14px !important;
+  color: #6a695f !important;
+  font-size: 11px !important;
+}
+
+.polls {
+  padding-top: 78px;
+  padding-bottom: 64px;
+}
+
+.dress-code {
+  padding-top: 78px;
+  padding-bottom: 62px;
+}
+
+.polls h2,
+.dress-code h2 {
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.dress-palette {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.dress-palette span {
+  width: 34px;
+  height: 34px;
+  border: 5px solid rgba(255, 255, 255, 0.78);
+  border-radius: 50%;
+  background: var(--color);
+  box-shadow: 0 4px 12px rgba(43, 38, 25, 0.12);
+}
+
+.poll-card {
+  margin-top: 20px;
+  padding: 18px 16px;
+  border: 1px solid rgba(109, 143, 67, 0.2);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.poll-card h3 {
+  margin: 0 0 8px;
+  color: var(--green);
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.schedule {
+  padding: 48px 34px 26px;
+  background: var(--paper);
+}
+
+.schedule h2 {
+  margin: 0 0 44px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.schedule ol {
+  display: grid;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.schedule li {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.schedule time {
+  font-size: 13px;
+}
+
+.schedule h3 {
+  margin: 0 0 2px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.schedule p {
+  margin: 0 0 13px;
+  color: #3c3529;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.map-section {
+  padding: 0 0 34px;
+  text-align: center;
+  background: var(--paper);
+}
+
+.map-address {
+  padding: 30px 28px 42px;
+  text-align: center;
+  background: var(--paper);
+}
+
+.map-address h2 {
+  margin: 0 0 10px;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.map-address p {
+  margin: 0;
+  color: #3c3529;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.yandex-map {
+  display: block;
+  width: 100% !important;
+  max-width: 100%;
+  height: 360px;
+  border: 0;
+}
+
+.map-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  margin: 20px 28px 0;
+  padding: 0 24px;
+  border-radius: 4px;
+  color: #12300e;
+  background: var(--green-soft);
+  box-shadow: 0 6px 16px rgba(72, 102, 46, 0.18);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-decoration: none;
+}
+
+.map-button:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+@media (max-width: 390px) {
+  .site::before,
+  .site::after {
+    display: none;
+  }
+
+  .botanical-card {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .schedule {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
